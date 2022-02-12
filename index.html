@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Victone Academy</title>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <nav class="navbar  navbar-expand-lg bg-dark navbar-dark  pt-lg-5" id="mainav">
+        <div class="container-fluid">
+           <a href="#" class="navbar-brand ms-5">Victone Academy</a>
+            <ul class="navbar-nav ms-auto align-items-center  ">
+                <li class="navbar-item">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Log in
+                      </button>
+                    <div class="dropdown-menu" >
+                        <form class="px-4 py-3">
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                              <label class="form-check-label" for="dropdownCheck">
+                                Remember me
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">New around here? Sign up</a>
+                        <a class="dropdown-item" href="#">Forgot password?</a>
+                      </div>
+
+                </li>
+
+   
+
+
+                    <li class="navbar-item px-2 py-3">
+                        <a href="#" class="nav-link "><img src="images/Facebook.svg" alt=""></a>
+
+                    </li>
+                    <li class="navbar-item px-2 py-3">
+                        <a href="#" class="nav-link "><img src="images/Instagram Circle.svg" alt=""></a>
+
+                    </li>
+                    <li class="navbar-item pe-5 ps-2 py-3">
+                        <a href="#" class="nav-link "><img src="images/Twitter.svg" alt=""></a>
+
+                    </li>
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <!--second navbar-->
+
+    <nav class="navbar navbar-expand-lg bg-warning navbar-light border border-dark">
+        
+        <div class="container d-flex justify-content-center ">
+            
+            <ul class="navbar-nav align-items-center ">
+                <li class="nav-item px-4 ">
+                   <a class="nav-link active" aria-current="page" href="#">Home</a>
+               </li>
+
+                 <li class="navbar-item px-4 ">
+                     <a href="#" class="nav-link ">Contact</a>
+
+                 </li>
+                 <li class="navbar-item px-4">
+                     <a href="#" class="nav-link ">About Us</a>
+
+                 </li>
+                 <li class="navbar-item px-4">
+                    <form class="form-inline">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text bg-dark" id="basic-addon1"><a href="#"><i class="bi bi-search text-light mx-1"></i></a></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                      </form>
+                    
+
+                 </li>
+
+
+
+         </ul>
+
+        </div>
+
+    </nav>
+    <!--hero section-->
+    <section class="hero">
+       
+        <div class="jumbotron " style="background-image:url(images/hero\ image.svg); background-size: 100%;">
+            <div class="container align-content-center text-center pt-5">
+                <div class="row">
+                    <div class="col-md-4 offset-md-7">
+                        <h1 class="py-3 pt-5 ms-auto">Victone Academy</h1>
+                        <h3 class=" pt-0 pb-3 ms-auto me-5">Clothing Design</h3>
+                        <p class="py-3  me-4">Victone is an Iranian brand which produce outlet clothing for women that design by Mahsa Boostani.
+                            we are always trying to produce the clothing you deserve.  
+                        </p>
+                        <button type="button" class="btn btn-dark custom-btn">More info</button>
+                    </div>
+                </div>   
+            </div>
+            
+         </div>
+    </section>
+    <!--accessories section-->
+    <section class="bg-warning text-dark p-5 border border-radius" id="accessory">
+        <div class="container align-content-center text-center pt-5">
+            <div class="row ">
+                <div class="col-md-4 p-5">
+                    <h1 class="py-3 pt-5 ms-auto">Victone Academy</h1>
+                    <h2 class=" pt-0 pb-3 ms-auto me-5">Accessory Design</h2>  
+                    <p class="  me-4"></p>> Victone is an Iranian brand which produce outlet clothing for women that design by Mahsa Boostani.
+                        we are always trying to produce the clothing you deserve.  </p> 
+
+                    <button type="button" class="btn btn-dark custom-btn">More info</button> 
+                    
+                </div>
+                <div class="col-md">
+                    <img class="img-fluid float-end " src="images/accessory.svg" alt="" >
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- shoe amd bag-->
+    <section class="bg-white text-dark p-5 " id="shoe">
+        <div class="container align-content-center text-center pt-5">
+            <div class="row ">
+                <div class="col-md">
+                    <img class="img-fluid float-start" src="images/shoe.svg" alt="">
+
+                </div>
+                <div class="col-md-4 p-5">
+ 
+                    <h1 class="py-3 pt-5 ms-auto">Victone Academy</h1>
+                    <h2 class=" pt-0 pb-3 ms-auto me-5">Accessory Design</h2>  
+                    <p class="  me-4"> Victone is an Iranian brand which produce outlet clothing for women that design by Mahsa Boostani.
+                        we are always trying to produce the clothing you deserve.  </p> 
+                        <button type="button" class="btn btn-dark custom-btn">More info</button>   
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--- courses-->
+    <section class=" bg-light text-dark" id="course">
+        <header class="bg-dark text-light text-center pt-0">
+            <h1>Courses</h1>
+        </header>
+        <div class="container  ">
+            <div class="row  d-flex flex-nowrap">
+                <div class="col-md p-2">
+                    <div class="card text-dark border-0 bg-light">
+                        <div class="card-body text-center mb-3">
+                            <h3>Sketch and Illustration</h3>
+                        </div>
+                        <div class="card-title">
+                            <img class="img-fluid"  src="images/Rectangle 11.svg" alt="">
+                        </div>
+                        <div class="card-text text-center">
+                            <a href="#" class=" btn btn-warning">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md p-2">
+                    <div class="card text-dark border-0 bg-light">
+                        <div class="card-body text-center mb-3">
+                            <h3>Fashion Styling</h3>
+                        </div>
+                        <div class="card-title">
+                            <img class="img-fluid"  src="images/Rectangle 12.svg" alt="">
+                        </div>
+                        <div class="card-text text-center">
+                            <a href="#" class=" btn btn-warning">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md p-2">
+                    <div class="card text-dark border-0 bg-light">
+                        <div class="card-body text-center mb-3 ">
+                            <h3>Fashion Branding</h3>
+                        </div>
+                        <div class="card-title">
+                            <img class="img-fluid" src="images/Rectangle 13.svg" alt="">
+                        </div>
+                        <div class="card-text text-center">
+                            <a href="#" class=" btn btn-warning">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---teachers-->
+    <section class=" text-dark" id="teacher">
+        <header class=" bg-secondary text-dark text-center pt-0">
+            <h1>Teachers</h1>
+        </header>
+        <div class="container">
+            <div class="row  ">
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="card  text-light  bg-secondary">
+                        <div class="card-body text-center  ">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title ">Joen Doe</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia, ea, sequi aperiam ex culpa, veritatis corrupti aspernatur doloremque modi fugiat maxime a inventore temporibus deleniti similique! Consectetur, molestiae porro.
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram  text-light mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ">
+                  <div class="card text-light bg-secondary">
+                      <div class="card-body text-center ">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="">
+                        <h3 class="card-title ">Jan Ben</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia, ea, sequi aperiam ex culpa, veritatis corrupti aspernatur doloremque modi fugiat maxime a inventore temporibus deleniti similique! Consectetur, molestiae porro.
+                        </p>
+                        <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram  text-light mx-1"></i></a>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ">
+                  <div class="card text-light bg-secondary">
+                   <div class="card-body text-center ">
+                    <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
+                    <h3 class="card-title ">Sara Mani</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia, ea, sequi aperiam ex culpa, veritatis corrupti aspernatur doloremque modi fugiat maxime a inventore temporibus deleniti similique! Consectetur, molestiae porro.
+                    </p>
+                    <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                    <a href="#"><i class="bi bi-instagram  text-light mx-1"></i></a>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ">
+                  <div class="card text-light bg-secondary">
+                    <div class="card-body text-center ">
+                      <img src="https://randomuser.me/api/portraits/women/14.jpg" class="rounded-circle mb-3" alt="">
+                      <h3 class="card-title ">Emily Vian</h3>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia, ea, sequi aperiam ex culpa, veritatis corrupti aspernatur doloremque modi fugiat maxime a inventore temporibus deleniti similique! Consectetur, molestiae porro.
+                      </p>
+                      <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                      <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                      <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                      <a href="#"><i class="bi bi-instagram  text-light mx-1"></i></a>
+                    </div>
+                  </div>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-dark " id="question">
+        <header class="bg-warning text-dark text-center pt-0 ">
+            <h1>Frequently asked questions</h1>
+        </header>
+        <div class="container">
+            <div class="accordion accordion-flush " id="questions">
+                <!--item1-->
+                <div class="accordion-item ">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                       <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Where exactly are you located
+                       </button>
+                    </h2>
+                       <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                           <div class="accordion-body">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusantium, modi aliquid, quod animi quas necessitatibus vero distinctio laboriosam ea fugiat ipsa sed doloribus illum at. Fugiat inventore voluptatibus veniam.
+                           </div>
+                       </div>
+                    
+                </div>
+                <!--item2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                       <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Where exactly are you located
+                       </button>
+                    </h2>
+                       <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                           <div class="accordion-body">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusantium, modi aliquid, quod animi quas necessitatibus vero distinctio laboriosam ea fugiat ipsa sed doloribus illum at. Fugiat inventore voluptatibus veniam.
+                           </div>
+                       </div>
+                    
+                </div>
+                <!--item3-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                       <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Where exactly are you located
+                       </button>
+                    </h2>
+                       <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                           <div class="accordion-body">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusantium, modi aliquid, quod animi quas necessitatibus vero distinctio laboriosam ea fugiat ipsa sed doloribus illum at. Fugiat inventore voluptatibus veniam.
+                           </div>
+                       </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact information-->
+    <section class="p-2" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location: </span>Eindhoven kastanjelaan1
+
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:  </span>+30897654323
+
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email: </span>Eng.m.boostani@gmail.com
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md">
+                    <div id="map">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="p-5 text-center bg-dark text-white position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Victone Academy</p>
+        </div>
+
+    </footer>
+
+
+    <!---log in form-->
+    <!----<div class="dropdown-menu" id="enroll">
+        <form class="px-4 py-3">
+          <div class="mb-3">
+            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+              <label class="form-check-label" for="dropdownCheck">
+                Remember me
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">New around here? Sign up</a>
+        <a class="dropdown-item" href="#">Forgot password?</a>
+      </div>
+
+
+
+
+
+
+
+
+  <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrolllabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrolllabel"> Modal Title</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">First Name</label>
+                            <input type="text" class="form-control" id="first-name ">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last-name ">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">Phone</label>
+                            <input type="text" class="form-control" id="phone ">
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="close">Close</button>
+                    <button type="button" class="btn btn-primary">Save Change</button>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+
+
+
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWFoc2Fib29zdGFuaTcxIiwiYSI6ImNreWVqamJqeDE5b2Iybm4wanc5aGUzbTYifQ.VyLeV9vC-zURh5fdXIPcHg';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+        });
+     </script>
+
+
+  
+
+
+
+
+ 
+
+
+
+    
+</body>
+</html>

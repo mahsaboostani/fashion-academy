@@ -1,0 +1,210 @@
+body::before{
+    display: block;
+    content: '';
+    
+}
+.navbar .navbar-brand{
+    font-family: 'Playball';
+    font-size: 40px;
+    
+}
+
+
+
+.hero .container{
+    font-family: 'Playfair Display', serif;
+}
+#mainav {
+    border: none;
+   
+    background-color: #000000;
+    
+    }
+    
+
+ 
+   #mainav li:nth-child(2) {
+   
+    background-color: #fec708;
+
+    
+    
+
+    
+    }
+    #mainav li:nth-child(3) {
+   
+        background-color: #fec708;
+
+        
+    }
+    #mainav li:nth-child(4) {
+   
+            background-color: #fec708;
+
+           
+            
+    }
+    #mainav li:nth-child(5) {
+   
+        background-color: #fec708;
+
+        
+        
+}
+
+
+    .navbar{
+        padding-bottom:0px !important;
+        padding-top:0px !important;
+        
+    }
+    .container-fluid{
+        
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+       
+        
+   
+
+    .navbar .container-fluid img{
+       
+        margin-top: 0%;
+        margin-bottom: 0%;
+
+       
+        width: 30px;
+        height: 30px;
+    }
+  
+    .jumbotron{
+        height: 90vh;
+        padding-top: 5em;
+        background-repeat: no-repeat;
+  
+
+      
+
+    }
+    #accessory{
+        position: relative;
+
+        margin-top: 3em;
+        width: 1393px;
+        height: 583px;
+        border-radius: 30px;
+        left: 25px;
+        font-family: 'Playfair Display', serif;
+        
+    }
+    #accessory .row img{
+        
+        height: 560px;
+      
+
+    }
+    #shoe{
+        margin-top: 4em;
+
+    }
+    #shoe .row img{
+        width: 516px;
+        height: 560px;
+    }
+    #shoe .row{
+        border: 0px;
+    }
+
+   
+    #course{
+        
+        padding-top: 0px;
+    }
+    #course .row{
+        
+        --bs-gutter-x: 0rem;
+    }
+    #course header{
+        margin-left: 0px;
+        padding-top: 0px;
+    }
+    #teacher{
+        margin-top: 3em;
+        
+        padding-top: 0px;
+       
+       
+
+    }
+    #teacher .card{
+        border-radius: 15px;
+    }
+
+    #question{
+        margin-top: 3em;
+        padding-top: 0px;
+
+
+    }
+    #contact{
+        margin-top: 3em;
+    }
+    .dropdown-menu[data-bs-popper] {
+        left: initial;
+
+    }
+
+    #map{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;    
+        
+        
+    }
+    
+   /* .container .card .images{
+        width: 20em;
+    }*/
+ 
+
+    
+  /* #accessory .container img{
+        width:500px;
+        height: 400px;
+        left: 10px;
+        top: 5px;
+
+        border-radius: 30px;
+       
+    
+       
+        
+    }
+    #shoe{
+        margin-top: 9em;
+        height: 500px;
+    }
+    #shoe .container p{
+        text-justify: inter-word;
+        margin-right: 0px !important;
+       
+    }
+    #shoe .container img{
+        width:500px;
+        height: 400px;
+        left: 30px;
+        top: 20px;
+        
+
+        border-radius: 30px;
+    }*/
+ 
+
+
+
+.custom-btn{
+    padding: 5px 50px;
+    color: #efefef;
+    font-weight: normal;
+}
