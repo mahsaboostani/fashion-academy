@@ -8,3 +8,5 @@ It uses these technologies:
 
 ## Run
 You can just open `index.html` in your browser
+## Preview
+![image](images/image-of-website.png)
