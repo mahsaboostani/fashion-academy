@@ -91,16 +91,17 @@ body::before{
         position: relative;
 
         margin-top: 3em;
-        width: 1393px;
-        height: 583px;
+        
+      /*  width: 1393px;*/
+        
         border-radius: 30px;
         left: 25px;
         font-family: 'Playfair Display', serif;
         
     }
-    #accessory .row img{
+    #accessory img{
         
-        height: 560px;
+        height: 550px;
       
 
     }
@@ -110,7 +111,7 @@ body::before{
     }
     #shoe .row img{
         width: 516px;
-        height: 560px;
+        
     }
     #shoe .row{
         border: 0px;
@@ -207,4 +208,33 @@ body::before{
     padding: 5px 50px;
     color: #efefef;
     font-weight: normal;
+}
+
+
+@media only screen and (max-width:768px){
+    #mainav .navbar-nav .navbar-item{
+        
+        padding: 0px !important;
+        flex-direction: row;
+        margin: 0px;
+        display: inline;
+        
+        
+    }
+    #mainav .navbar-nav .nav-link{
+        display: inline;
+    }
+    .navbar .container-fluid{
+        flex-wrap: nowrap;
+        font-size: small;
+    }
+    #accessory img{
+        height: auto;
+
+        
+    }
+    .jumbotron .row{
+        padding-top: 50px;
+    }
+ 
 }
