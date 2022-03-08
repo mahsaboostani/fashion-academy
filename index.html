@@ -17,6 +17,8 @@
     <title>Victone Academy</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://css.gg/arrow-left.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -68,15 +70,15 @@
 
 
 
-                <li class="navbar-item px-2 py-3">
+                <li class=" bg-warning navbar-item px-2 py-3">
                     <a href="#" class="nav-link "><img src="images/Facebook.svg" alt=""></a>
 
                 </li>
-                <li class="navbar-item px-2 py-3">
+                <li class="bg-warning navbar-item px-2 py-3">
                     <a href="#" class="nav-link "><img src="images/Instagram Circle.svg" alt=""></a>
 
                 </li>
-                <li class="navbar-item  ps-2 py-3">
+                <li class="bg-warning navbar-item  ps-2 py-3">
                     <a href="#" class="nav-link "><img src="images/Twitter.svg" alt=""></a>
 
                 </li>
@@ -140,6 +142,28 @@
         </div>
 
     </nav>
+    <div onclick="activeArrow()" class="arrow-left position-fixed top-50 end-0 " id="arrow"></div>
+    <div class="change-hide position-fixed top-50 end-0 m-4" id="change">
+
+        <div class=" row p-2 ml-4 ">
+            <div class=" col-md ">
+                <label for=" colorpicker">Change black color:</label>
+                <input onchange="changeColor(this)" type="color" id="colorpicker" value="#000000">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <label for="colorpicker">Change yellow color:</label>
+                <input onchange="changeColorY(this)" type="color" id="colorpicker" value="#ffc106">
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
     <!--hero section-->
     <section class="hero">
 
@@ -511,8 +535,14 @@
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
 
+    <div class="card">
+        <div class="card-body text-center d-flex justify-content-center align-items-center flex-column">
+            <p>Click the below button to activate the Color Picker</p>
+            <button class="btn btn-primary btn-sm" id="color-picker-2">Open Picker</button>
+        </div>
+    </div>-->
 
 
 
