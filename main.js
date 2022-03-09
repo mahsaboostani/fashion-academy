@@ -11,6 +11,42 @@ let black = document.getElementsByClassName("bg-dark");
 let yelow = document.getElementsByClassName("bg-warning");
 
 let arroW = document.getElementById("arrow");
+let questions_count = 5;
+
+function checkWin() {
+    let result = [];
+    for (let i = 0; i < questions_count; i++) {
+        let answer = document.querySelector('input[name="q[' + i + ']"]:checked');
+        if (answer) {
+            result.push(answer.value);
+        } else {
+            result.push(0);
+        }
+    }
+    checkAnswer(result);
+}
+
+function checkAnswer(result) {
+    let count = 0;
+    let answer = atob("MjEzMTI=").split("");
+    for (let i = 0; i < questions_count; i++) {
+        let question = document.querySelector('input[name="q[' + i + ']"][value="' + result[i] + '"]');
+        if (result[i] === answer[i]) {
+            document.getElementById("tick" + i).innerHTML = "&#9989";
+            count++;
+        } else {
+            if (question) {
+                document.querySelector('[for = "' + question.id + '"]').style.color = "red";
+            }
+        }
+
+    }
+    if (count === 5) {
+        document.getElementById("gif").setAttribute("src", "images/FymNEH.gif");
+
+    }
+}
+
 
 
 
@@ -64,4 +100,3 @@ function activeArrow() {
 
 
 document.getElementById('mybtn').addEventListener("click", check);
-
