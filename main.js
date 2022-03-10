@@ -32,6 +32,7 @@ function checkAnswer(result) {
     for (let i = 0; i < questions_count; i++) {
         let question = document.querySelector('input[name="q[' + i + ']"][value="' + result[i] + '"]');
         if (result[i] === answer[i]) {
+            document.getElementById("tick" + i).style.display = "block";
             document.getElementById("tick" + i).innerHTML = "&#9989";
             count++;
         } else {
@@ -42,12 +43,29 @@ function checkAnswer(result) {
 
     }
     if (count === 5) {
-        document.getElementById("gif").setAttribute("src", "images/FymNEH.gif");
+        document.getElementById("gif").style.display = "block";
 
     }
 }
 
+function resetwin() {
+    document.getElementById("gif").style.display = "none";
 
+    for (let i = 0; i < questions_count; i++) {
+        document.getElementById("tick" + i).style.display = "none";
+    }
+    let labels = document.getElementById('form').querySelectorAll('label');
+    console.log("hi");
+    for (let i = 0; i < labels.length; i++) {
+        labels[i].style.color = "black";
+
+
+    }
+    document.getElementById("form").reset();
+
+
+
+}
 
 
 
