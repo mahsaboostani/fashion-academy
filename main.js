@@ -9,9 +9,10 @@ let wel = document.getElementById("welcome");
 
 let black = document.getElementsByClassName("bg-dark");
 let yelow = document.getElementsByClassName("bg-warning");
-
+let trueAnswer = [];
 let arroW = document.getElementById("arrow");
 let questions_count = 5;
+
 
 function checkWin() {
     let result = [];
@@ -28,7 +29,8 @@ function checkWin() {
 
 function checkAnswer(result) {
     let count = 0;
-    let answer = atob("MjEzMTI=").split("");
+    let answer = trueAnswer.split("");
+    console.log(answer);
     for (let i = 0; i < questions_count; i++) {
         let question = document.querySelector('input[name="q[' + i + ']"][value="' + result[i] + '"]');
         if (result[i] === answer[i]) {
@@ -116,5 +118,93 @@ function activeArrow() {
     }
 }
 
+
+
+const login = async () => {
+    var urlencoded = new URLSearchParams();
+    urlencoded.append("email", emailAddress.value);
+    urlencoded.append("password", passWord.value);
+
+    try {
+        const response = await fetch("http://127.0.0.1:3001/login", {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: urlencoded
+
+        });
+        const data = await response.json();
+        console.log(data);
+        localStorage.setItem('token', data.token);
+        wel.innerHTML = `welcome ${emailAddress.value}`;
+        document.getElementById("dropdownMenu").innerHTML = "Log out";
+
+
+    }
+    catch (error) {
+        console.log(error);
+    }
+
+
+}
+
+
+window.onload = async function info() {
+    var tok = localStorage.getItem("token");
+    try {
+        const response = await fetch("http://127.0.0.1:3001/info", {
+            method: 'GET',
+            headers: { "Authorization": tok, "Content-Type": "application/x-www-form-urlencoded" }
+        });
+        const data = await response.json();
+        console.log(data);
+        if (data.user) {
+            wel.innerHTML = `welcome ${data.user}`;
+            document.getElementById("dropdownMenu").innerHTML = "Log out";
+        }
+
+    }
+    catch (error) {
+        console.log(error);
+
+
+    }
+
+}
+
+function logOut() {
+    let logout = document.getElementById("dropdownMenu");
+    if (logout.innerHTML === "Log out") {
+        localStorage.removeItem("token");
+        location.reload();
+        //     logout.addEventListener("click", function () {
+
+        //         localStorage.removeItem("token");
+        //         document.getElementById("dropdownMenu").innerHTML = "Log in";
+        //         wel.style.display = "none";
+        //     })
+
+    }
+
+}
+
+
+const checkServer = async () => {
+    var tok = localStorage.getItem("token");
+    try {
+        const response = await fetch("http://127.0.0.1:3001/check", {
+            method: 'GET',
+            headers: { "Authorization": tok, "Content-Type": "application/x-www-form-urlencoded" }
+        });
+        const data = await response.json();
+        trueAnswer = data.answer;
+        console.log(data);
+
+    }
+    catch (error) {
+        console.log(error);
+
+    }
+}
+checkServer();
 
 document.getElementById('mybtn').addEventListener("click", check);
