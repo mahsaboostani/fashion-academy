@@ -6,6 +6,8 @@ It uses these technologies:
 - CSS
 - Bootstrap
 
+Also this project has a Q/A game for more information about fashion.
+
 ## Design
 I have designed this website with figma, you can see it [here](https://www.figma.com/file/0hiRX2vABNnxm8dhbxpfmJ/Untitled)
 
